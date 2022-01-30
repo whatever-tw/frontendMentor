@@ -24,5 +24,7 @@ jobs:
         with:
           # Set a generated GITHUB_TOKEN for pushing to the remote branch.
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Set Git user.name
-          user_name: whatever
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          full_commit_message: ${{ github.event.head_commit.message }}
+
