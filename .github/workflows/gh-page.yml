@@ -28,5 +28,4 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: . # The folder the action should deploy.
-          git-config-name: git-action[bot]
-          clean: true
+          git-config-name: git-actions[bot]
